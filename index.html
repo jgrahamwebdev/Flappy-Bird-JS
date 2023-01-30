@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Flappy Bird</title>
+</head>
+
+  <body>
+   
+    <div class="border-left"></div>
+
+    <div class="game-container">
+
+      <div class="sky">
+        <div class="bird">
+          <img class="bird-img player-one" src="bird.png" alt="">
+          <img class="bird-img player-two hidden" src="birdOne.png" alt="">
+          <img class="bird-img player-three hidden" src="birdTwo.png" alt="">
+          <img class="bird-img player-four hidden" src="birdThree.png" alt="">
+          <img class="bird-img player-five hidden" src="birdFour.png" alt="">
+          <img class="bird-img player-six hidden" src="birdFive.png" alt="">
+        </div>
+      </div>
+
+      <div class="ground"></div>
+
+    </div><!--end of GAME-CONTAINER-->
+
+    <div class="title-box">
+      <h1 class="title">FLAPPY BIRD!</h1>
+    </div>
+
+    <div class="score-box">
+      <h2 class="score-title">Time:</h2> 
+      <div class="stopwatch">00:00:00</div>
+    </div>
+
+    <div class="newGame-box">
+      <button class="newGame-btn resetTimer" onClick="window.location.reload();">New Game</button>
+    </div>
+
+    <div class="border-right"></div>
+
+    <div class="character-container">
+      <h2 class="character-title">Choose Your Character!</h2>
+      <div class="character-box"><img class="character character-one" src="bird.png" alt=""></div>
+      <div class="character-box"><img class="character character-two" src="birdOne.png" alt=""></div>
+      <div class="character-box"><img class="character character-three" src="birdTwo.png" alt=""></div>
+      <div class="character-box"><img class="character character-four" src="birdThree.png" alt=""></div>
+      <div class="character-box"><img class="character character-five" src="birdFour.png" alt=""></div>
+      <div class="character-box"><img class="character character-six" src="birdFive.png" alt=""></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

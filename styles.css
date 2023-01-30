@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --border-color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.border-left {
+  width: 200px;
+  height: 790px;
+  position: absolute;
+  background-color: var(--border-color);
+  z-index: 3;
+  left: 510px;
+}
+
+.border-right {
+  width: 200px;
+  height: 790px;
+  position: absolute;
+  background-color: var(--border-color);
+  z-index: 3;
+  left: 1208px;
+}
+
+.game-container {
+  width: 500px;
+  height: 730px;
+  position: absolute;
+}
+
+.sky {
+  background-image: url('sky.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px 580px;
+  width: 500px;
+  height: 580px;
+  position: absolute;
+}
+
+.ground {
+  background-image: url('ground.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px 150px;
+  width: 500px;
+  height: 150px;
+  position: absolute;
+  top: 580px;
+  z-index: 2;
+}
+
+.bird {
+  position: absolute;
+  height: 30px;
+  width: 60px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bird-img {
+ width: 70px;
+ height: auto;
+ display: inline;
+}
+
+.obstacle {      
+  background-image: url('obstacle.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110px 320px;
+  width: 110px;
+  height: 290px;
+  position: absolute; 
+}
+
+.topObstacle {      
+  background-image: url('obstacle.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110px 320px;
+  width: 110px;
+  height: 290px;
+  position: absolute; 
+  transform: rotate(180deg);
+}
+
+.title-box {
+  position: absolute;
+  top: 50rem;
+  width: 100%;
+  text-align: center;
+}
+.title {
+  font-size: 6rem;
+}
+
+.score-box {
+  position: absolute;
+  top: 15rem;
+  left: 88rem;
+  width: 20rem;
+  height: 8rem;
+  border-radius: 20px;
+  border: 3px solid #000;
+  text-align: center;
+  z-index: 4;
+}
+.score-title {
+  margin: 1.4rem 0;
+}
+.stopwatch {
+  font-size: 1.5rem;
+}
+
+.newGame-box {
+  position: absolute;
+  top: 15rem;
+  left: 2rem;
+  width: 25%;
+  text-align: center;
+  z-index: 4;
+}
+
+.newGame-btn {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 30px;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+}
+.newGame-btn:active {
+  background-color: #3498db;
+  color: #000;
+}
+
+.character-container {
+  width: 25%;
+  height: 25%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40px repeat(2, 90px);
+  grid-template-areas: 'header header header'
+                        'one two three'
+                        'four five six';
+  background-color: #fff;
+  border-radius: 20px;
+  border: 3px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 69%;
+  z-index: 4;
+}
+
+.character-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-title {
+  grid-area: header;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.character {
+  width: 80px;
+  height: auto;
+  margin: auto;
+  cursor: pointer;
+}
+
+.character-one {
+  grid-area: one;
+}
+.character-two {
+  grid-area: two;
+}
+.character-three {
+  grid-area: three;
+}
+.character-four {
+  grid-area: four;
+}
+.character-five {
+  grid-area: five;
+}
+.character-six {
+  grid-area: six;
+}
+
+
+.hidden {
+  display: none;
+}
